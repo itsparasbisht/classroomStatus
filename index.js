@@ -46,7 +46,7 @@ app.use('/live-classes', liveRoute)
 app.use('/attendance', attendanceRoute)
 app.use('/delete', deleteRoute)
 
-app.post('/api/admin-verify', (req, res) => {
+app.post('/admin-verify', (req, res) => {
     if(req.body.code === ADMIN_CODE){
         res.status(200).send('ok')
     }
