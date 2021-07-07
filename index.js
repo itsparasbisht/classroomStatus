@@ -30,13 +30,21 @@ mongoose.connect(MONGO_URL, {
 .catch(err => console.log(err.message))
 
 // routes
-app.use('/api/classes', classesRoute)
-app.use('/api/classes/add', studentsRoute)
-app.use('/api/all-students', recordsRoute)
-app.use('/api/update-record', updateRoute)
-app.use('/api/live-classes', liveRoute)
-app.use('/api/attendance', attendanceRoute)
-app.use('/api/delete', deleteRoute)
+// app.use('/api/classes', classesRoute)
+// app.use('/api/classes/add', studentsRoute)
+// app.use('/api/all-students', recordsRoute)
+// app.use('/api/update-record', updateRoute)
+// app.use('/api/live-classes', liveRoute)
+// app.use('/api/attendance', attendanceRoute)
+// app.use('/api/delete', deleteRoute)
+
+app.use('/classes', classesRoute)
+app.use('/classes/add', studentsRoute)
+app.use('/all-students', recordsRoute)
+app.use('/update-record', updateRoute)
+app.use('/live-classes', liveRoute)
+app.use('/attendance', attendanceRoute)
+app.use('/delete', deleteRoute)
 
 app.post('/api/admin-verify', (req, res) => {
     if(req.body.code === ADMIN_CODE){
