@@ -27,7 +27,7 @@ function DisplayLive() {
                             <h2><small>Teacher</small> <br />{item.teacher}</h2>
                         </div>
                     )) : 
-                    <h1>no active classes.</h1>
+                    <h1>...</h1>
                 }
             </div>
         </div>

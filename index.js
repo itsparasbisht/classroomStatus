@@ -1,6 +1,5 @@
 const express = require('express')
 const mongoose = require('mongoose')
-const path = require('path')
 
 require('dotenv').config()
 const PORT = process.env.PORT || 5500
@@ -30,13 +29,6 @@ mongoose.connect(MONGO_URL, {
 .catch(err => console.log(err.message))
 
 // routes
-// app.use('/api/classes', classesRoute)
-// app.use('/api/classes/add', studentsRoute)
-// app.use('/api/all-students', recordsRoute)
-// app.use('/api/update-record', updateRoute)
-// app.use('/api/live-classes', liveRoute)
-// app.use('/api/attendance', attendanceRoute)
-// app.use('/api/delete', deleteRoute)
 
 app.use('/classes', classesRoute)
 app.use('/classes/add', studentsRoute)

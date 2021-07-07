@@ -33,7 +33,7 @@ function Days() {
                             <div className="days__ctr-item">{date}</div>
                         </Link>
                     )) :
-                    <h1>nothing in history list :(</h1>
+                    <h1>...</h1>
                 }
             </div>
         </div>

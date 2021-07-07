@@ -43,7 +43,7 @@ function Update() {
                             <img id="delete__img" data-id={item._id} onClick={handleDelete} className="update__classes-delete" src="/icons/trash-can.png" alt="delete the classs" title="delete this class" />
                         </div>
                     )) :
-                    <h2>add a class first</h2>
+                    <h2>...</h2>
                 }
             </div>
         </div>

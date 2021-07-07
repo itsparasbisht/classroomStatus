@@ -29,7 +29,7 @@ function Live() {
                             </div>
                         </Link>
                     )) :
-                    <h2>add a class first</h2>
+                    <h2>...</h2>
                 }
             </div>
         </div>

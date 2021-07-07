@@ -28,7 +28,7 @@ function History() {
                             </div>
                         </Link>
                     )) :
-                    <h2>no record present.</h2>
+                    <h2>...</h2>
                 }
             </div>
         </div>

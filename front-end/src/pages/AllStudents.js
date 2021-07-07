@@ -28,7 +28,7 @@ function AllStudents() {
                             </div>
                         </Link>
                     )) :
-                    <h2>no record added.</h2>
+                    <h2>...</h2>
                 }
             </div>
         </div>
