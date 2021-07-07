@@ -1,0 +1,42 @@
+.days__ctr {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.days__ctr-item {
+  border: 2px solid red;
+  padding: 3px;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: #ff003c;
+  transition: all 0.3s;
+}
+.days__ctr-item:hover {
+  background-color: white;
+  color: #ff003c;
+}
+.days__ctr > h1 {
+  font-family: "Roboto";
+  font-size: 21px;
+  margin: 20px auto;
+  color: #ff003c;
+}
+
+@media all and (max-width: 600px) {
+  .days__ctr {
+    gap: 8px;
+    margin-top: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .days__ctr-item {
+    font-size: 15px;
+  }
+}

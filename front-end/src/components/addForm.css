@@ -1,0 +1,44 @@
+.add__form {
+  width: 450px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  margin: 40px auto;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  font-family: "Roboto";
+}
+.add__form > h3 {
+  display: flex;
+  flex-direction: column;
+}
+.add__form > h3 > span {
+  font-size: 21px;
+  font-weight: 600;
+  color: #ff003c;
+}
+.add__form > h3 > small {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media all and (max-width: 600px) {
+  .add__form {
+    width: 350px;
+    height: 490px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .add__form {
+    width: 100%;
+    height: 490px;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0px auto;
+  }
+}

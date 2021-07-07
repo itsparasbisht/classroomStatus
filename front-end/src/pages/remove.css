@@ -1,0 +1,28 @@
+.remove__details {
+  width: 500px;
+  height: 150px;
+  margin: 20px auto;
+  font-family: "Roboto";
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.remove__details > h2 {
+  font-weight: 400;
+  font-size: 19px;
+  padding-bottom: 15px;
+}
+
+@media all and (max-width: 600px) {
+  .remove__details {
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+  }
+  .remove__details > h2 {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

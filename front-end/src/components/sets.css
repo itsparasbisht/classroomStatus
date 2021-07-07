@@ -1,0 +1,36 @@
+.sets,
+.admin__options,
+.alters__item {
+  width: 80%;
+  margin: 20px auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.sets > button {
+  border: none;
+  background-color: transparent;
+}
+.live__box {
+  position: relative;
+}
+.live__status {
+  position: absolute;
+  top: -5px;
+  right: -2px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #ff003c;
+  border: 3px solid white;
+}
+
+@media all and (max-width: 600px) {
+  .sets,
+  .admin__options {
+    margin: 10px auto;
+    padding: 20px 20px;
+  }
+}

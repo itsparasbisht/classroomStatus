@@ -1,0 +1,31 @@
+.attendance > form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.attendance__list {
+  width: 300px;
+  height: auto;
+  margin: 10px auto;
+}
+.attendance__list > div > p {
+  font-family: "Roboto";
+}
+.attendance__list > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 5px;
+}
+
+@media all and (max-width: 500px) {
+  .attendance__list {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .attendance__list > div {
+    padding: 3px 10px;
+    font-size: 15px;
+  }
+}

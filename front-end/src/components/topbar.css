@@ -1,0 +1,82 @@
+.topbar {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+.topbar__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+.topbar__head span {
+  background-color: #ff003c;
+  border: 2px solid #ff003c;
+  padding: 5px 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.topbar__head span:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ff003c;
+}
+.topbar__head img {
+  width: 180px;
+  height: 70px;
+  object-fit: cover;
+}
+.topbar > h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 20px auto;
+  padding: 5px 20px;
+  font-weight: 600;
+  display: inline-block;
+  width: fit-content;
+  font-size: 23px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  color: white;
+}
+
+@media all and (max-width: 600px) {
+  .topbar__head img {
+    width: 120px;
+    height: 50px;
+    object-fit: cover;
+  }
+  .topbar__head span {
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  .topbar > h1 {
+    padding: 5px 15px;
+    font-size: 17px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .topbar__head img {
+    margin-left: -20px;
+  }
+  .topbar > h1 {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .topbar > h1 {
+    padding: 5px 15px;
+    font-size: 13px;
+  }
+}
